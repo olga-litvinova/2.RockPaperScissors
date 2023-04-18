@@ -1,3 +1,4 @@
+
 function getComputerChoice(){
 	var Random=Math.floor(Math.random() * 3);
 	if (Random===0) {return "Rock";}
@@ -31,3 +32,4 @@ function final() {
 	}
 };
 final()
+

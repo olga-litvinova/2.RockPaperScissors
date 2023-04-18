@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <button class="Rock" onclick="getComputerChoice()">Rock</button>
-    <button class="Paper">Paper</button>
-    <button class="Scissors">Scissors</button>
+    <div class="header">
+        <H1>Play against Computer</H1>
+        <H3 class="round"> </H3>
+    </div>
 
+    <div class="firstContainer">
+        <div class="rock">
+         <img src="image/rock.jpg" alt="Rock"  id="rockBtn">
+            <h2>Rock</h2>
+        </div>
+
+        <div class="paper">
+            <img src="image/paper.jpg" alt="Paper" id="paperBtn">
+            <h2>Paper</h2>
+        </div>
+
+        <div class="scissors">
+            <img src="image/scissors.jpg" alt="Scissors" id="scissorsBtn">
+            <h2>Scissors</h2>
+        </div>
+    </div>
+
+    <div class="secondContainer"> 
+        <div class="score">
+            <h3 class="yourScore">Your Score:</h3>
+            <h3 class="computerScore">Computer Score:</h3>
+        </div>
+        <div class="choice">
+            <div class="yourChoice"></div>
+            <div class="computerChoice"></div>
+        </div>
+    </div>
  
-    <script src="game.js"></script> 
+    <script src="event.js"></script> 
 </body>
 </html>
